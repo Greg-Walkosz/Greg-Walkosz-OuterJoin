@@ -96,7 +96,7 @@ public class OuterJoinActivity {
 
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
-
+        sql = "SELECT * FROM class LEFT JOIN student ON class.class_title = student.class_title";
 
 
         Set<ExampleEntity> results = new HashSet<>();
@@ -125,7 +125,7 @@ public class OuterJoinActivity {
 
         String sql = FileUtil.parseSQLFile("problem2.sql");
 
-
+        sql = "SELECT * FROM class RIGHT JOIN textbook ON class.class_title = textbook.class_title";
 
         Set<ExampleEntity> results = new HashSet<>();
         try {
